@@ -726,7 +726,7 @@ sp<IAudioTrack> AudioFlinger::createTrack(const CreateTrackInput& input,
                                             clientPid, clientUid, &input.config, input.flags,
                                             &output.selectedDeviceId, &portId, &secondaryOutputs);
 
-    if (lStatus != NO_ERROR || output.outputId == AUDIO_IO_HANDLE_NONE) {
+    if (lStatus != NO_ERROR) {
         ALOGE("createTrack() getOutputForAttr() return error %d or invalid output handle", lStatus);
         goto Exit;
     }
