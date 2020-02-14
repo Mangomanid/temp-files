@@ -1,3 +1,94 @@
+2/12/2020
+- RingtoneManager: Don't crash if the ringtone doesn't have a numerical ID
+
+2/11/2020
+- Battery percentage: Fix cut off issue in the keyguard
+- Camera: Check consumer interface before disconnecting
+- Change layout of ToggleAction for GlobalActionsDialog
+- libcameraservice: Don't pass NULL args on setCallbacks call
+- libstagefright: Fix memory leak due to lock timeout
+- ProgressBar: Media volume bar indicates a wrong value
+- Re-implement Context-aware Bluetooth airplane mode
+- Re-implement Disable/Enable screenshot sound toggle
+- Remove QS tint changes
+- sepolicy: Address denials for legacy last_kmsg file
+- Sepolicy: snap_app: Allow binder call with gpuservice
+- Sepolicy: Allow init to write to /proc/cpu/alignment
+- sf: Check memory allocations at interval of 300 frames
+- sf: Restart model sync on fps change
+- SurfaceFlinger: Use default initializer for layer stats
+- SystemUI/AndroidManifest.xml: Override authorities for providers
+- Update SurfaceFlingerProperties scope
+- vendor: Define isStatic argument on setupwizard overlay
+
+2/9/2020
+
+Fix new battery styles not being able to use percents options
+
+2/8/2020
+- Fixed disabling of screenshot shutter sound
+- Optimize Pixel offline charging animation
+- Re-implement extended screenshot AKA Longshot
+- SystemUI: Hide QS divider
+- SystemUI: replace pulse light drawable with Omni's vector
+
+2/7/2020
+- base: Keyguard: Fix some ugly code and save a lot of runtime
+- base: replace Evolution fingerprint with ro.build.date
+- base: use correct fingerprint to clear cache dirs on update
+- QS brightness slider: Update brightness thumb vector
+- QS tiles: update more vectors
+- Settings: QS tiles: update vectors
+- SystemUI: Hide gradient behind QS panel
+
+2/6/2020
+- Added Big Circle battery style
+- Added flash-call-on-waiting option
+- Added option to launch default music player on headset connect
+- AoD: Always force brightness updates on pause
+- Camera: Use default prop for Privileged App List
+- Fixed AoD front scrim being opaque at DOZE_PULSING
+- Fixed NPE with void android.view.VelocityTracker.clear()
+- Lockscreen weather Soli port: more code improvements
+- Reland "Apply front scrim to doze pulsing"
+- Now use VibrationEffect for in call vibration
+
+2/5/2020
+- Add missing hide flag to public deviceHasSoli api
+- Added classic Circle battery style from CM
+- Fixed unnecessary truncation in Slice
+- base: Increase Longshot timeout to 2 seconds
+- base: Longshot: Whitelist to use hidden APIs
+- base: Lower the internal audio capture restriction
+- base: omnistyle: Stinky workaround for header shadow and tinted images
+- Camera: Ignore torch status update for aux or composite camera
+- Disable Ambient on wake gestures by default
+- Disable Wake to Ambient on Soli devices
+- GlobalScreenshot: do not capture multiple screenshots simultaneously
+- Merged February 2020 security patch changes
+- ScreenshotSelector: mark externally unused functions as private
+- Settings: Adaptive brightness: Fix summary fuckery
+- Settings: Fix crash when going back from battery
+- Settings: Fix usage of ChooseLockSettingsHelper
+- Settings: fuelgauge: add back battery level animation
+- Settings: Update raw animations and drawables from Pixel 4 XL
+- Settings: Use IEC units in app info data usage
+- SystemUI: add Ambient Lights always on hide aod content option
+- SystemUI: Add an option to pulse edge light for all doze triggers
+- SystemUI: Allow limiting edge lighting repeats
+- SystemUI: block gestural navigation when using partial screenshot
+- SystemUI: kill any leftover notification pulse on new pulse start
+- SystemUI: Lockscreen weather code fixes
+- SystemUI: Only add GarbageMonitor tile to default tiles on ENG builds
+- SystemUI: only call showAodContent(true) if we are still on the keyguard
+- SystemUI: Pass correct NetworkTemplate to CellularTile detail view
+- SystemUI: Pulse light accent color option
+- SystemUI: re-implement Pulse and Ambient notification bars
+- SystemUI: Tint QSTile icon with accent color
+- SystemUI: trigger pulse light only for notifications
+- SystemUI: use ROWS_HIGH_PRIORITY for active notification pulse check
+
+
 2/02
      - Merge February security patch
      - Update evo version to 4.1 
@@ -108,14 +199,15 @@
          - SystemUI: Use matching data usage size formatting between QS and Settings 
 
 Device Changelogs:
-        -Update IMS blobs
-        -Update Graphics blobs
-        -Add overlays for smart charging
-        - Update Media/Wifi Display blobs
-        -Update CNE/DPM 
-
-
-
-
-
-
+        - Merge Device Sources with Zeelog's Latest Stable Source.
+        - Added Safailnet
+        - Update media configs from LA.UM.8.6.r1-02600-89xx.0
+        - Restore perfboostconfig from LA.UM.8.6.r1-02600-89xx.0 
+        - Update graphics stack from LA.UM.8.6.r1-02900-89xx.0
+        - Update shell scripts from LA.UM.8.6.r1-02900-89xx.0
+        - Few Kernel improvements
+        - Added support for 1080p video streaming for YouTube
+        - Eliminate all kinds of Network Fluctuations
+        - Nuked the Annoying HD notification 
+        - Bring back Dirac sound
+        - Added Configuration to avoid Screen Ghosting 👻 Issue.
