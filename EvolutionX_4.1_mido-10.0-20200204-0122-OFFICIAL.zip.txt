@@ -211,3 +211,9 @@ Device Changelogs:
         - Nuked the Annoying HD notification 
         - Bring back Dirac sound
         - Added Configuration to avoid Screen Ghosting 👻 Issue.
+
+Honourable Mentions:-
+Zeelog 
+Reynold (YSL dev) to help me fix RIL issues
+Rafiester for all types of guidance
+Sumit and Rockstar for testing all previously bugged build ;)
