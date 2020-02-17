@@ -1,3 +1,37 @@
+2/17/2020
+
+* Pixel Charge from POSP
+* Color Bucket from ArrowOS
+* Uprev to 4.1.420
+
+2/14/2020
+
+Add Screen stabilization support
+
+AndroidManifest: add a permission group for signature spoofing
+
+Dark theme twilight mode backend and tile
+
+Fix nav bar leak in SystemUI
+
+Keyguard: ReInflate views when density or font scale change
+
+Settings: Add settings for scheduling dark theme
+
+Settings: Bug:PreferredNetworkModePreferenceController.java not being refreshed
+
+Settings: DarkUIPreferenceController null exception
+
+Settings: Fix QRCamera crash
+
+Add BlueFirework recognizing FP animation
+
+2/13/2020
+
+Add upgrade step to fix system sounds issue
+
+SystemUI: Add MIUI 11 VoLTE icon
+
 2/12/2020
 - RingtoneManager: Don't crash if the ringtone doesn't have a numerical ID
 
@@ -199,21 +233,10 @@ Fix new battery styles not being able to use percents options
          - SystemUI: Use matching data usage size formatting between QS and Settings 
 
 Device Changelogs:
-        - Merge Device Sources with Zeelog's Latest Stable Source.
-        - Added Safailnet
-        - Update media configs from LA.UM.8.6.r1-02600-89xx.0
-        - Restore perfboostconfig from LA.UM.8.6.r1-02600-89xx.0 
-        - Update graphics stack from LA.UM.8.6.r1-02900-89xx.0
-        - Update shell scripts from LA.UM.8.6.r1-02900-89xx.0
-        - Few Kernel improvements
-        - Added support for 1080p video streaming for YouTube
-        - Eliminate all kinds of Network Fluctuations
-        - Nuked the Annoying HD notification 
-        - Bring back Dirac sound
-        - Added Configuration to avoid Screen Ghosting 👻 Issue.
+        - Switch To PureCAFx kernel By Rafiester for better performance.
+        - Minor Stability improvements
 
 Honourable Mentions:-
 Zeelog 
-Reynold (YSL dev) to help me fix RIL issues
-Rafiester for all types of guidance
-Sumit and Rockstar for testing all previously bugged build ;)
+Rafiester
+Rohit for testing all bugged build ;)
